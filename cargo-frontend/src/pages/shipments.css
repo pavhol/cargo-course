@@ -1,0 +1,17 @@
+@import "../../styles/shared.css";
+
+.shipments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shipments-table th,
+.shipments-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.shipments-table th {
+  background-color: #f0f0f0;
+}

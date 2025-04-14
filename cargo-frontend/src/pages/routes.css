@@ -1,0 +1,17 @@
+@import "../../styles/shared.css";
+
+.routes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.routes-table th,
+.routes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.routes-table th {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,253 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 40px 60px;
+  }
+  
+  .shipments-container {
+    padding-left: 40px; /* отступ слева */
+  }
+  
+  .shipment-form {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin-bottom: 32px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f0f0, #dfe9f3);
+    padding: 2rem;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .login-form .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+  }
+  
+  .login-form input:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
+  .login-form .form-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-form button {
+    background-color: #0077cc;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .login-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  .form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .main-content {
+    padding: 2rem;
+    min-height: calc(100vh - 64px); /* учитывает высоту Navbar */
+    background-color: #f9fafb;
+  }
+  
+
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+  }  
+
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #0077ff;
+    outline: none;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .form-actions button {
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+  }
+  
+  .form-actions button:hover {
+    background: #005fcc;
+    transform: scale(1.03);
+  }
+  
+  .shipments-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+    min-height: 400px; /* растягиваем вниз */
+  }
+  
+  .shipments-table th,
+  .shipments-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    
+    text-align: left;
+  }
+  
+  .shipments-table th {
+    background: #f9fafb;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .shipments-table tbody tr:hover {
+    background: #f3f4f6;
+  }
+  
+  .shipments-table button {
+    background: #4ade80;
+    border: none;
+    padding: 6px 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .shipments-table button:hover {
+    background: #22c55e;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
